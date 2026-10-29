@@ -27,7 +27,7 @@ const CONFIG = {
 
   // ---- Home banner photo ----
   // Photo file name (it sits next to index.html).
-  heroImage: "orange-truck.jpg",
+  heroImage: "preview.webp",
 
   texts: {
     homeP1: "Sayyed Transport Mumbai is committed to providing reliable, efficient, and professional transportation and logistics services to meet the diverse needs of businesses and customers. We focus on the safe handling, timely delivery, and secure transportation of goods, ensuring a smooth and hassle-free experience for every client.",
@@ -46,7 +46,7 @@ const CONFIG = {
   ],
 
   // type: "mini" | "pickup" | "truck"  (drawing used when there is no photo)
-  // photo: "orange" | "white" built-in photos, or a path like "images/tata-ace.jpg"
+  // photo: "orange" | "own" | "lineup" built-in photos, or a file name
   // NOTE: capacities below are sample values. Please confirm and edit.
   fleet: [
     { name: "Mini Closed Body Truck", type: "mini",   photo: "own",    capacity: "750 kg",  use: "Small and medium loads", text: "Our own closed-body mini truck. Safe from rain and dust, ideal for city deliveries." },
@@ -67,9 +67,9 @@ const waLink = (num, msg = "") => `https://wa.me/${num}${msg ? "?text=" + encode
 const initials = n => n.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase();
 // Built-in photos (photo files sit next to index.html)
 const PHOTOS = {
-  orange: "orange-truck.jpg",
-  own:    "our-truck.jpg",
-  lineup: "tata-trucks.jpg"
+  orange: "preview.webp",
+  own:    "preview (1).webp",
+  lineup: "preview (2).webp"
 };
 const photoSrc = k => PHOTOS[k] || k;
 
