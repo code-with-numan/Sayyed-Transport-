@@ -27,7 +27,7 @@ const CONFIG = {
 
   // ---- Home banner photo ----
   // Photo file name (it sits next to index.html).
-  heroImage: "preview.webp",
+  heroImage: "preview (2).webp",
 
   texts: {
     homeP1: "Sayyed Transport Mumbai is committed to providing reliable, efficient, and professional transportation and logistics services to meet the diverse needs of businesses and customers. We focus on the safe handling, timely delivery, and secure transportation of goods, ensuring a smooth and hassle-free experience for every client.",
@@ -67,9 +67,9 @@ const waLink = (num, msg = "") => `https://wa.me/${num}${msg ? "?text=" + encode
 const initials = n => n.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase();
 // Built-in photos (photo files sit next to index.html)
 const PHOTOS = {
-  orange: "preview.webp",
+  orange: "preview (2).webp",
   own:    "preview (1).webp",
-  lineup: "preview (2).webp"
+  lineup: "preview.webp"
 };
 const photoSrc = k => PHOTOS[k] || k;
 
