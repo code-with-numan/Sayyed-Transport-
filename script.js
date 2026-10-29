@@ -26,8 +26,8 @@ const CONFIG = {
   mapQuery: "Damodar Park, Nabard Colony, Lal Bahadur Shastri Marg, Ghatkopar West, Mumbai 400086",
 
   // ---- Home banner photo ----
-  // Replace this file in the "images" folder (or change the name here).
-  heroImage: "images/orange-truck.jpg",
+  // Photo file name (it sits next to index.html).
+  heroImage: "orange-truck.jpg",
 
   texts: {
     homeP1: "Sayyed Transport Mumbai is committed to providing reliable, efficient, and professional transportation and logistics services to meet the diverse needs of businesses and customers. We focus on the safe handling, timely delivery, and secure transportation of goods, ensuring a smooth and hassle-free experience for every client.",
@@ -65,11 +65,11 @@ const fmtPhone = n => {
 };
 const waLink = (num, msg = "") => `https://wa.me/${num}${msg ? "?text=" + encodeURIComponent(msg) : ""}`;
 const initials = n => n.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase();
-// Built-in photos (files inside the "images" folder)
+// Built-in photos (photo files sit next to index.html)
 const PHOTOS = {
-  orange: "images/orange-truck.jpg",
-  own:    "images/our-truck.jpg",
-  lineup: "images/tata-trucks.jpg"
+  orange: "orange-truck.jpg",
+  own:    "our-truck.jpg",
+  lineup: "tata-trucks.jpg"
 };
 const photoSrc = k => PHOTOS[k] || k;
 
